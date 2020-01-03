@@ -12,7 +12,7 @@ app.use('/', recipeRoutes)
 
 // Create new recipe
 recipeRoutes.route('/Add').post(function (req, res) {
-  const recipe = new RecipePage(req.body);
+  const recipe = new Recipe(req.body);
   recipe.save()
     .then(brew => {
       res.json(brew);
