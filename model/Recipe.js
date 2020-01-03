@@ -64,9 +64,91 @@ const RecipeSchema = new Schema({
                 value: Number,
                 unit: String
             }
-        }        
+        }
+        {
+            name: String,
+            amount: {
+                value: Number,
+                unit: String
+            }
+        },
+        {
+            name: String,
+            amount: {
+                value: Number,
+                unit: String
+            }
+        },
+        {
+            name: String,
+            amount: {
+                value: Number,
+                unit: String
+            }
+        },
+        {
+            name: String,
+            amount: {
+                value: Number,
+                unit: String
+            }
+        }   
     ],
     hops: [
+    {
+        name: String,
+        amount: {
+            value: Number,
+            unit: String
+        },
+        add: String,
+        attribute: String
+    },
+    {
+        name: String,
+        amount: {
+            value: Number,
+            unit: String
+        },
+        add: String,
+        attribute: String
+    },
+    {
+        name: String,
+        amount: {
+            value: Number,
+            unit: String
+        },
+        add: String,
+        attribute: String
+    },
+    {
+        name: String,
+        amount: {
+            value: Number,
+            unit: String
+        },
+        add: String,
+        attribute: String
+    },
+    {
+        name: String,
+        amount: {
+            value: Number,
+            unit: String
+        },
+        add: String,
+        attribute: String
+    },
+    {
+        name: String,
+        amount: {
+            value: Number,
+            unit: String
+        },
+        add: String,
+        attribute: String
+    },
     {
         name: String,
         amount: {
@@ -115,9 +197,7 @@ const RecipeSchema = new Schema({
     ],
     yeast: String
     },
-    food_pairing: [
-        Array
-    ],
+    food_pairing: Array,
     brewers_tips: String,
     contributed_by: String
 })

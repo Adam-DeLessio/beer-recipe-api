@@ -3,7 +3,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const app = express()
 const recipeRoutes = require('./routes/recipeRoutes')
-const Brewery = require('./model/Recipe')
+const Recipe = require('./model/Recipe')
 
 app.use(bodyParser.json())
 app.use(cors())
@@ -78,7 +78,6 @@ app.set("port", process.env.PORT || 8080)
 app.listen(app.get('port'), () => {
 	console.log(`✅ PORT: ${app.get("port")} 🌟`)
 })
-
 
 
 
