@@ -4,10 +4,7 @@ const express = require('express')
 
 const RecipeSchema = new Schema({
 	id: Number,
-    name: {
-        type: String,
-        required: true
-    }
+    name: String,
     tagline: String,
     first_brewed: String,
     description: String,
