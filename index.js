@@ -10,9 +10,9 @@ app.use(cors())
 app.use('/', recipeRoutes)
 
 
-// Create new brewery
-recipeRoutes.route('/create').post(function (req, res) {
-  const recipe = new Recipe(req.body);
+// Create new recipe
+recipeRoutes.route('/Add').post(function (req, res) {
+  const recipe = new RecipePage(req.body);
   recipe.save()
     .then(brew => {
       res.json(brew);
@@ -22,9 +22,10 @@ recipeRoutes.route('/create').post(function (req, res) {
     });
 });
 
+
 // Also create new brewery, not sure which way is correct
 // app.post('/', (req, res) => {
-// 	Brewery.create(req.body).then(brew => {
+// 	Recipe.create(req.body).then(brew => {
 // 		res.json(brew)
 // 	})
 // })
