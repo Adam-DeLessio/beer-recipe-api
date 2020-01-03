@@ -11,7 +11,8 @@ if (process.env.NODE_ENV === 'production') {
 
 mongoose.connect(mongoURI, {
 	useNewUrlParser : true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
 })
 	.then( feedback => console.log('connected') )
 	.catch( err => console.log('connection failed', err) )
