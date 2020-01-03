@@ -1,5 +1,6 @@
 const mongoose = require('../db/connection')
 const Schema = mongoose.Schema
+const express = require('express')
 
 const RecipeSchema = new Schema({
 	id: Number,
@@ -40,162 +41,162 @@ const RecipeSchema = new Schema({
             unit: String
         }
     },
-    twist: Boolean
+    twist: String
     },
     ingredients: {
         malt: [
-        {
-            name: String,
-            amount: {
-                value: Number,
-                unit: String
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                }
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                }
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                }
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                }
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                }
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                }
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                }
+            }   
+        ],
+        hops: [
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                },
+                add: String,
+                attribute: String
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                },
+                add: String,
+                attribute: String
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                },
+                add: String,
+                attribute: String
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                },
+                add: String,
+                attribute: String
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                },
+                add: String,
+                attribute: String
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                },
+                add: String,
+                attribute: String
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                },
+                add: String,
+                attribute: String
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                },
+                add: String,
+                attribute: String
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                },
+                add: String,
+                attribute: String
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                },
+                add: String,
+                attribute: String
+            },
+            {
+                name: String,
+                amount: {
+                    value: Number,
+                    unit: String
+                },
+                add: String,
+                attribute: String
             }
-        },
-        {
-            name: String,
-            amount: {
-                value: Number,
-                unit: String
-            }
-        },
-        {
-            name: String,
-            amount: {
-                value: Number,
-                unit: String
-            }
-        }
-        {
-            name: String,
-            amount: {
-                value: Number,
-                unit: String
-            }
-        },
-        {
-            name: String,
-            amount: {
-                value: Number,
-                unit: String
-            }
-        },
-        {
-            name: String,
-            amount: {
-                value: Number,
-                unit: String
-            }
-        },
-        {
-            name: String,
-            amount: {
-                value: Number,
-                unit: String
-            }
-        }   
-    ],
-    hops: [
-    {
-        name: String,
-        amount: {
-            value: Number,
-            unit: String
-        },
-        add: String,
-        attribute: String
-    },
-    {
-        name: String,
-        amount: {
-            value: Number,
-            unit: String
-        },
-        add: String,
-        attribute: String
-    },
-    {
-        name: String,
-        amount: {
-            value: Number,
-            unit: String
-        },
-        add: String,
-        attribute: String
-    },
-    {
-        name: String,
-        amount: {
-            value: Number,
-            unit: String
-        },
-        add: String,
-        attribute: String
-    },
-    {
-        name: String,
-        amount: {
-            value: Number,
-            unit: String
-        },
-        add: String,
-        attribute: String
-    },
-    {
-        name: String,
-        amount: {
-            value: Number,
-            unit: String
-        },
-        add: String,
-        attribute: String
-    },
-    {
-        name: String,
-        amount: {
-            value: Number,
-            unit: String
-        },
-        add: String,
-        attribute: String
-    },
-    {
-        name: String,
-        amount: {
-            value: Number,
-            unit: String
-        },
-        add: String,
-        attribute: String
-    },
-    {
-        name: String,
-        amount: {
-            value: Number,
-            unit: String
-        },
-        add: String,
-        attribute: String
-    },
-    {
-        name: String,
-        amount: {
-            value: Number,
-            unit: String
-        },
-        add: String,
-        attribute: String
-    },
-    {
-        name: String,
-        amount: {
-            value: Number,
-            unit: String
-        },
-        add: String,
-        attribute: String
-    }
-    ],
-    yeast: String
+        ],
+        yeast: String
     },
     food_pairing: Array,
     brewers_tips: String,

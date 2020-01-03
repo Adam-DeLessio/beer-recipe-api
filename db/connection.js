@@ -1,13 +1,13 @@
 const mongoose = require('mongoose')
-// const mongoURL = 'mongodb://localhost/api-project'
-let mongoURI = ''
+const mongoURI = 'mongodb://localhost/beer-recipe-api'
+// let mongoURI = ''
 mongoose.Promise = Promise
 
-if (process.env.NODE_ENV === 'production') {
-	mongoURI = process.env.DB_URL
-} else {
-	mongoURI = 'mongodb://localhost/beer-recipe-api'
-}
+// if (process.env.NODE_ENV === 'production') {
+// 	mongoURI = process.env.DB_URL
+// } else {
+// 	mongoURI = 'mongodb://localhost/beer-recipe-api'
+// }
 
 mongoose.connect(mongoURI, {
 	useNewUrlParser : true,
