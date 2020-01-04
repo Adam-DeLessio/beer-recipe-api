@@ -58,6 +58,12 @@ app.get('/id/:id', (req, res) => {
 	})
 })
 
+app.get('/_id/:_id', (req, res) => {
+	Recipe.find({ _id: req.params._id }).then(brew => {
+		res.json(brew)
+	})
+})
+
 // Get brewery by id
 // Example: http://localhost:6969/id/5e091e1336567ffd665821d9
 app.get('/id/:_id', (req, res) => {
