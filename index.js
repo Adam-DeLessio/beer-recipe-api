@@ -60,11 +60,11 @@ app.get('/id/:id', (req, res) => {
 
 // Get brewery by id
 // Example: http://localhost:6969/id/5e091e1336567ffd665821d9
-// app.get('/id/:_id', (req, res) => {
-// 	Recipe.findById(req.params._id).then(brew => {
-// 		res.json(brew)
-// 	})
-// })
+app.get('/id/:_id', (req, res) => {
+	Recipe.findById(req.params._id).then(brew => {
+		res.json(brew)
+	})
+})
 
 // Delete brewery by id ?
 // app.delete('/id/:_id', (req, res) => {
